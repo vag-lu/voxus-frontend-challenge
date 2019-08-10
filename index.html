@@ -5,51 +5,69 @@
     <title>Voxus</title>
     <meta charset="utf-8">
 
+    <script type="text/javascript" src="root/js/index.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./root/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <img src="./root/img/city.svg"></img>
+    <div class="pageHead">
+        <img class="logo" src="https://www.voxus.com.br/imgs/logo.svg"></img>
+    </div>
+    <div class="pageContainer">
 
-    <div>
+        <div class="topMessage">
+            <p class="firstMessage">Você está a poucos passos de otimizar suas campanhas!</p>
+            <p class="secondMessage">Queremos conhecer mais sobre sua empresa para melhorar sua experiência com a Voxus.</p>
+        </div>
+
+        <div class="formContainer">
+            <div class="field">
+                <input id="name" required></input>
+                <label for="name">Nome completo</label>
+            </div>
+
+            <div class="field">
+                <input id="phone"></input>
+                <label for="phone">Telefone</label>
+            </div>
+
+            <div class="field">
+                <input id="email"></input>
+                <label for="email">Endereço de e-mail</label>
+            </div>
+
+            <div class="field">
+                <input id="company"></input>
+                <label for="company">Nome da empresa</label>
+            </div>
+
+            <div class="field">
+                <input id="url"></input>
+                <label for="url">URL do site</label>
+            </div>
+
+            <div class="field">
+                <select>
+                    <option value="6">&gt;= R$5.000</option>
+                    <option value="5">&gt;= R$5.001 e &lt;= R$30.000</option>
+                    <option value="4">&gt;= R$30.001 e &lt;= R$100.000</option>
+                    <option value="3">&gt;= R$100.001 e &lt;= R$500.000</option>
+                    <option value="2">&gt;= R$500.001</option>
+                    <option value="1">Não se aplica</option>
+                </select>
+            </div>
+            <button class="beforeClickButton" id="finish-button" onclick="handleButtonClick()">Experimentar gratuitamente</button>
+        </div>
+        <div class="bottomMessage">
+            <p>*Para usar o trial grátis você precisa ser um e-commerce e concordar com os termos e requisitos do trial gratuito. Saiba mais em: <a target="_blank" href="https://www.voxus.com.br/privacidade.html">Termos e requisitos de trial gratuito</a></p>
+        </div>
 
     </div>
-    <div>
-        <div class="formContainer">
-            <form>
-                <div class="field">
-                    <label for="name">Nome completo</label>
-                    <input id="name"></input>
-                </div>
 
-                <div class="field">
-                    <label for="phone">Telefone</label>
-                    <input id="phone"></input>
-                </div>
-
-                <div class="field">
-                    <label for="email">Endereço de e-mail</label>
-                    <input id="email"></input>
-                </div>
-
-                <div class="field">
-                    <label for="company">Nome da empresa</label>
-                    <input id="company"></input>
-                </div>
-
-                <div class="field">
-                    <label for="url">URL do site</label>
-                    <input id="url"></input>
-                </div>
-
-                <div class="field">
-                    <label for="budget">Verba mensal em média</label>
-                    <input id="budget"></input>
-                </div>
-            </form>
-            <button id="finish-button">Experimentar gratuitamente</button>
-        </div>
+    <div class="pageBottom">
+        <hr />
     </div>
 </body>
 

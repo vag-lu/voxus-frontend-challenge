@@ -1,46 +1,140 @@
 body {
-    background-color: #E5E5E5;
+    background-image: url('../img/city.svg');
     margin: 0;
-    overflow: hidden;
+}
+
+.pageHead {
+    top: 0;
+    background-color: #FFFFFF;
+    height: fit-content;
+    width: 100%;
+}
+
+.logo {
+    top: 0;
+    margin: 12px 0 12px 25%;
+}
+
+.pageContainer {
+    width: 40%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topMessage {
+    font-family: Roboto;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.firstMessage {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.secondMessage {
+    font-size: 0.875rem;
 }
 
 .formContainer {
-    position: absolute;
-    width: 40vw;
-    height: 60vh;
-    left: 410px;
-    top: 20vh;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    top: 50%;
     background: #FFFFFF;
     box-shadow: 0px 4px 40px rgba(116, 130, 150, 0.2);
     border-radius: 3px;
-    text-align: center;
     padding: 27px 0px 27px 0;
 }
 
 .field {
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 15px;
 }
 
-input {
+.formContainer input {
     border: 1px solid rgba(116, 130, 150, 0.2);
     background: #FFFFFF;
     width: 50%;
     height: 40px;
 }
 
-label {
+.formContainer label {
     position: absolute;
-    color: rgba(116, 130, 150, 0.2);
+    color: rgba(45, 58, 64, 0.3);
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
+    margin-left: 15px;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    margin-left: 15px;
+    transition: all 200ms;
 }
 
-input:focus,
-label {}
+input:focus+label {
+    font-size: 75%;
+    background: #FFFFFF;
+    transform: translate3d(0, -140%, 0);
+    padding: 5px;
+    outline: none;
+}
+
+.beforeClickButton {
+    width: 40%;
+    height: 40px;
+    background: #14E298;
+    border-radius: 3px;
+    border: none;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+}
+
+.beforeClickButton:hover {
+    background: #23F7AB;
+}
+
+.beforeClickButton:active {
+    background: #14E298;
+}
+
+.afterClickButton {
+    color: #14E298;
+    background: #FFFFFF;
+    border: 1px solid #14E298;
+}
+
+.afterClickButton:hover {
+    color: #14E298;
+    background: #FFFFFF;
+    border: 1px solid #14E298;
+}
+
+.bottomMessage {
+    font-family: Roboto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.bottomMessage p {
+    font-size: 0.7rem;
+}
+
+.pageBottom {
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
