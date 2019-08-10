@@ -1,0 +1,46 @@
+body {
+    background-color: #E5E5E5;
+    margin: 0;
+    overflow: hidden;
+}
+
+.formContainer {
+    position: absolute;
+    width: 40vw;
+    height: 60vh;
+    left: 410px;
+    top: 20vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(116, 130, 150, 0.2);
+    border-radius: 3px;
+    text-align: center;
+    padding: 27px 0px 27px 0;
+}
+
+.field {
+    position: relative;
+    margin: 15px;
+}
+
+input {
+    border: 1px solid rgba(116, 130, 150, 0.2);
+    background: #FFFFFF;
+    width: 50%;
+    height: 40px;
+}
+
+label {
+    position: absolute;
+    color: rgba(116, 130, 150, 0.2);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 15px;
+}
+
+input:focus,
+label {}
