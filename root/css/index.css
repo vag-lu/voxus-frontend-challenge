@@ -12,7 +12,7 @@ body {
 
 .logo {
     top: 0;
-    margin: 12px 0 12px 25%;
+    margin: 12px 0 12px 15%;
 }
 
 .pageContainer {
@@ -33,10 +33,12 @@ body {
 .firstMessage {
     font-size: 2rem;
     font-weight: 500;
+    color: #2D3A40;
 }
 
 .secondMessage {
     font-size: 0.875rem;
+    color: #748296;
 }
 
 .formContainer {
@@ -53,7 +55,6 @@ body {
 .field {
     position: relative;
     display: flex;
-    align-items: center;
     flex-direction: column;
     margin: 15px;
 }
@@ -63,6 +64,22 @@ body {
     background: #FFFFFF;
     width: 50%;
     height: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formContainer select {
+    border: 1px solid rgba(116, 130, 150, 0.2);
+    background: #FFFFFF;
+    width: 50%;
+    height: 40px;
+    outline: none;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .formContainer label {
@@ -77,6 +94,7 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     transition: all 200ms;
+    margin-left: 30%;
 }
 
 input:focus+label {
@@ -91,6 +109,7 @@ input:focus+label {
     width: 40%;
     height: 40px;
     background: #14E298;
+    border: 1px solid #14E298;
     border-radius: 3px;
     border: none;
     color: #FFFFFF;
@@ -110,12 +129,14 @@ input:focus+label {
 }
 
 .afterClickButton {
-    color: #14E298;
-    background: #FFFFFF;
-    border: 1px solid #14E298;
-}
-
-.afterClickButton:hover {
+    width: 40%;
+    height: 40px;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
     color: #14E298;
     background: #FFFFFF;
     border: 1px solid #14E298;
@@ -124,17 +145,30 @@ input:focus+label {
 .bottomMessage {
     font-family: Roboto;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .bottomMessage p {
     font-size: 0.7rem;
+    color: #748296;
 }
 
 .pageBottom {
-    width: 50%;
+    width: 70%;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+}
+
+ul#bottom-options {
+    padding: 0;
+}
+
+ul#bottom-options li {
+    display: inline;
+    font-family: Roboto;
+    color: #748296;
+    font-size: 0.7rem;
+    margin-right: 20px;
 }
